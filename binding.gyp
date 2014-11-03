@@ -1,6 +1,9 @@
 {
   'targets': [
     {
+     "libraries": [
+          '<!(cups-config --libs)',
+      ],
       'target_name': 'node_printer',
       'sources': [
         # is like "ls -1 src/*.cc", but gyp does not support direct patterns on
